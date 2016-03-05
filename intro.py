@@ -20,7 +20,7 @@ teamsList = dbroot["teams"]
 class Team(Persistent):
     def __init__(self, name, statsUrl):
         self.name = name
-        self.statsUrl =statsUrl
+        self.statsUrl = statsUrl
 
     def update(self):
         response2 = requests.get("http://espn.go.com" + self.statsUrl)
