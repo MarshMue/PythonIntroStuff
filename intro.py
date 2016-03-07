@@ -19,7 +19,7 @@ teamsList = dbroot["teams"]
 
 class Team(Persistent):
     def __init__(self, name, statsUrl):
-        self.name = name
+        self.name = namet
         self.statsUrl = statsUrl
 
     def update(self):
